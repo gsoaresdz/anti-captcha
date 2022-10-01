@@ -1,4 +1,4 @@
-# :sparkles: Automação de Quebra de Anti Captcha
+# :sparkles: Automação de Quebra de Anti-Captcha
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/69989654/193430295-a8cfd210-9e41-4f1c-91a3-d0c3d90e6bcc.gif)
 
