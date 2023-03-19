@@ -1,17 +1,30 @@
-# Quebra de Anti-Captcha do Google
+#Projeto Anti-Captcha
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/69989654/193430295-a8cfd210-9e41-4f1c-91a3-d0c3d90e6bcc.gif)
+Este projeto utiliza a biblioteca Selenium e a API do Anti-Captcha para quebrar captchas do tipo reCAPTCHA v2 em uma página web de demonstração.
 
-# Descrição do projeto
+# Dependências
 
-- Este é um projeto do curso da Hashtag Treinamentos [hashtagtreinamentos]([https://origamid.com](https://hashtagtreinamentos.com)). É um projeto que simula uma quebra
-de captcha através da documentação do Google, confeccionado com Python, Módulos/Bibliotecas Selenium e anticaptchaofficial;
+Para executar este projeto, você precisará instalar as seguintes bibliotecas:
 
-- Durante o desenvolvimento do projeto, pude reforçar os conceitos de condições com o Python, utilização de módulos e Bibliotecas.
+- selenium
+- webdriver-manager
+- anticaptchaofficial
+- pillow
 
-# Instalações (Anaconda Prompt)
+Você pode instalá-las utilizando o seguinte comando:
 
 ```bash
-# Selenium
-pip install selenium
+pip install selenium webdriver-manager anticaptchaofficial pillow
 ```
+
+# Configuração
+
+Para executar o projeto, você precisará obter uma chave de API do Anti-Captcha. Substitua 'SUA_CHAVE_API' pela sua chave de API no arquivo `main.py`:
+
+```
+chave_api = 'SUA_CHAVE_API'
+```
+
+# Execução
+
+Execute o script com o seguinte comando:
