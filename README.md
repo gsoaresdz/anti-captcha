@@ -13,7 +13,7 @@ Para executar este projeto, você precisará instalar as seguintes bibliotecas:
 
 Você pode instalá-las utilizando o seguinte comando:
 
-```bash
+```
 pip install selenium webdriver-manager anticaptchaofficial pillow
 ```
 
@@ -28,3 +28,24 @@ chave_api = 'SUA_CHAVE_API'
 # Execução
 
 Execute o script com o seguinte comando:
+
+```
+python main.py
+```
+
+# Funcionamento
+
+O script seguirá os seguintes passos:
+
+1. Importar as bibliotecas necessárias.
+2. Inicializar o navegador web (Google Chrome) utilizando o Selenium.
+3. Acessar a página web de demonstração do reCAPTCHA.
+4. Quebrar o captcha utilizando a API do Anti-Captcha.
+5. Inserir a resposta do captcha no campo apropriado.
+6. Enviar o formulário com o captcha resolvido.
+7. Salvar uma captura de tela como evidência da quebra do captcha.
+8. Encerrar o navegador.
+
+# Arquivo de código
+
+O código completo está disponível em main.py.
