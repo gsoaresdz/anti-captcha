@@ -1,4 +1,4 @@
-#Projeto Anti-Captcha
+# Projeto Anti-Captcha
 
 Este projeto utiliza a biblioteca Selenium e a API do Anti-Captcha para quebrar captchas do tipo reCAPTCHA v2 em uma página web de demonstração.
 
