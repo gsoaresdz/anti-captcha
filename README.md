@@ -30,7 +30,7 @@ chave_api = 'SUA_CHAVE_API'
 Execute o script com o seguinte comando:
 
 ```
-python main.py
+python quebrandoCaptcha.ipynb
 ```
 
 # Funcionamento
@@ -48,4 +48,4 @@ O script seguirá os seguintes passos:
 
 # Arquivo de código
 
-O código completo está disponível em main.py.
+O código completo está disponível em quebrandoCaptcha.ipynb.
