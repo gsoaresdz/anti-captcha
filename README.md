@@ -1,51 +1,76 @@
-# Projeto Anti-Captcha
+## **Projeto Anti-Captcha**
 
-Este projeto utiliza a biblioteca Selenium e a API do Anti-Captcha para quebrar captchas do tipo reCAPTCHA v2 em uma página web de demonstração.
+O Projeto Anti-Captcha é uma aplicação Python desenvolvida para automatizar a quebra de captchas do tipo reCAPTCHA v2 em páginas web. Utiliza a biblioteca Selenium para interação com navegadores web e a API do Anti-Captcha para resolver os captchas.
 
-# Dependências
+## **Regra de Negócio**
 
-Para executar este projeto, você precisará instalar as seguintes bibliotecas:
+O principal objetivo do projeto é demonstrar a capacidade de automatizar a solução de captchas reCAPTCHA v2 em um site de teste, usando a API do Anti-Captcha. Isso pode ser útil para testes de penetração, automação de testes ou estudos relacionados a captchas.
 
-- selenium
-- webdriver-manager
-- anticaptchaofficial
-- pillow
+## **Tecnologias Utilizadas**
 
-Você pode instalá-las utilizando o seguinte comando:
+- **Python**: Linguagem de programação
+- **Selenium**: Biblioteca para automação de navegadores web
+- **WebDriver Manager**: Gerenciador de drivers para navegadores
+- **Anti-Captcha API**: Serviço de resolução de captchas
+- **PIL (Python Imaging Library)**: Biblioteca para manipulação de imagens
+    
+    ```bash
+    pip install selenium
+    pip install anticaptchaofficial
+    pip install time
+    pip install Pillow
+    ```
+    
 
-```
+## **Versão do Python**
+
+Este projeto é compatível com **Python 3.6** ou versões superiores.
+
+## **IDE Recomendada**
+
+Qualquer IDE que suporte desenvolvimento Python pode ser usada, como:
+
+- PyCharm
+- Visual Studio Code
+- Jupyter Notebook
+- Atom
+
+## **Instalação e Configuração**
+
+### **Clonando o Repositório**
+
+Primeiramente, clone o repositório do projeto para sua máquina local.
+
+### **Instalação das Dependências**
+
+Para instalar as dependências do projeto, execute o seguinte comando no terminal:
+
+```bash
 pip install selenium webdriver-manager anticaptchaofficial pillow
 ```
 
-# Configuração
+### **Configuração da API Key**
 
-Para executar o projeto, você precisará obter uma chave de API do Anti-Captcha. Substitua 'SUA_CHAVE_API' pela sua chave de API no arquivo `main.py`:
+Você deve adquirir uma chave API do Anti-Captcha. Após obter, substitua **`'SUA_CHAVE_API'`** pela sua chave real no script.
 
-```
-chave_api = 'SUA_CHAVE_API'
-```
+### **Instalação do WebDriver**
 
-# Execução
+O WebDriver Manager cuidará automaticamente do download do driver necessário para o seu navegador. Certifique-se de ter o navegador correspondente instalado (por padrão, Chrome).
 
-Execute o script com o seguinte comando:
+## **Execução do Código**
 
-```
-python quebrandoCaptcha.ipynb
-```
+Para executar o projeto, abra o script no seu ambiente de desenvolvimento Python e execute-o. O script automatizará a abertura do navegador, acessará a página de teste do reCAPTCHA, resolverá o captcha e enviará a evidência da quebra do captcha.
 
-# Funcionamento
+### **Passos Executados pelo Código**
 
-O script seguirá os seguintes passos:
+1. **Abertura do Navegador**: Inicia uma sessão do navegador Chrome.
+2. **Acessando a Página Web**: Navega até a página com o reCAPTCHA v2.
+3. **Quebrando o Captcha**: Utiliza a API do Anti-Captcha para resolver o captcha.
+4. **Envio de Evidência**: Tira um screenshot como evidência após quebrar o captcha.
+5. **Encerramento**: Fecha a sessão do navegador.
 
-1. Importar as bibliotecas necessárias.
-2. Inicializar o navegador web (Google Chrome) utilizando o Selenium.
-3. Acessar a página web de demonstração do reCAPTCHA.
-4. Quebrar o captcha utilizando a API do Anti-Captcha.
-5. Inserir a resposta do captcha no campo apropriado.
-6. Enviar o formulário com o captcha resolvido.
-7. Salvar uma captura de tela como evidência da quebra do captcha.
-8. Encerrar o navegador.
+## **Observações Importantes**
 
-# Arquivo de código
-
-O código completo está disponível em quebrandoCaptcha.ipynb.
+- Este projeto é apenas para fins educacionais e de pesquisa.
+- Quebrar captchas em sites sem permissão pode violar termos de serviço e leis locais.
+- É importante usar este script de forma ética e responsável.
