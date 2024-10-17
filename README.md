@@ -1,4 +1,4 @@
-<h1 align="center">Projeto Anti-Captcha</h1>
+<h1 align="center">Anti-Captcha Project</h1>
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/gsoaresdz/anti-captcha?color=56BEB8">
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/gsoaresdz/anti-captcha?color=56BEB8">
@@ -6,38 +6,38 @@
   <!--<img alt="License" src="https://img.shields.io/github/license/seu-usuario/projeto-anti-captcha?color=56BEB8">-->
 </p>
 <p align="center">
-  <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-recursos">Recursos</a> &#xa0; | &#xa0;
-  <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-execução">Execução</a> &#xa0; | &#xa0;
-  <a href="#memo-observações-importantes">Observações Importantes</a> &#xa0; | &#xa0;
-  <a href="#memo-licença">Licença</a> &#xa0; | &#xa0;
-  <a href="https://github.com/gsoaresdz" target="_blank">Autor</a>
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-execution">Execution</a> &#xa0; | &#xa0;
+  <a href="#memo-important-notes">Important Notes</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/gsoaresdz" target="_blank">Author</a>
 </p>
 <br>
 
-## **:dart: Sobre**
+## **:dart: About**
 
-O Projeto Anti-Captcha é uma aplicação Python desenvolvida para automatizar a quebra de captchas do tipo reCAPTCHA v2 em páginas web. Utiliza a biblioteca Selenium para interação com navegadores web e a API do Anti-Captcha para resolver os captchas.
+The Anti-Captcha Project is a Python application developed to automate the bypassing of reCAPTCHA v2 on web pages. It uses the Selenium library for web browser interaction and the Anti-Captcha API to solve the captchas.
 
-## **:memo: Regra de Negócio**
+## **:memo: Business Rule**
 
-O principal objetivo do projeto é demonstrar a capacidade de automatizar a solução de captchas reCAPTCHA v2 em um site de teste, usando a API do Anti-Captcha. Isso pode ser útil para testes de penetração, automação de testes ou estudos relacionados a captchas.
+The main goal of this project is to demonstrate the ability to automate the solving of reCAPTCHA v2 on a test site using the Anti-Captcha API. This can be useful for penetration testing, test automation, or studies related to captchas.
 
-## **:sparkles: Recursos**
+## **:sparkles: Features**
 
-:heavy_check_mark: **Recurso 1**: Abertura do navegador e navegação até a página com reCAPTCHA v2.
+:heavy_check_mark: **Feature 1**: Opens the browser and navigates to a page with reCAPTCHA v2.
 
-:heavy_check_mark: **Recurso 2**: Utilização da API do Anti-Captcha para resolver o captcha.
+:heavy_check_mark: **Feature 2**: Uses the Anti-Captcha API to solve the captcha.
 
-:heavy_check_mark: **Recurso 3**: Captura de tela como evidência após resolver o captcha.
+:heavy_check_mark: **Feature 3**: Takes a screenshot as evidence after solving the captcha.
 
-:heavy_check_mark: **Recurso 4**: Encerramento automático da sessão do navegador.
+:heavy_check_mark: **Feature 4**: Automatically closes the browser session.
 
-## **:rocket: Tecnologias**
+## **:rocket: Technologies**
 
-As seguintes ferramentas foram usadas neste projeto:
+The following tools were used in this project:
 
 - [Python](https://www.python.org/)
 - [Selenium](https://www.selenium.dev/)
@@ -45,60 +45,58 @@ As seguintes ferramentas foram usadas neste projeto:
 - [Anti-Captcha API](https://anti-captcha.com/)
 - [Pillow (Python Imaging Library)](https://pillow.readthedocs.io/en/stable/)
 
-## **:white_check_mark: Requerimentos**
+## **:white_check_mark: Requirements**
 
-Antes de iniciar :checkered_flag:, você precisa ter [Python 3.6](https://www.python.org/downloads/release/python-360/) ou superior instalado.
+Before starting :checkered_flag:, you need to have [Python 3.6](https://www.python.org/downloads/release/python-360/) or higher installed.
 
-## **:checkered_flag: Execução**
+## **:checkered_flag: Execution**
 
-### Clonando o Repositório
+### Cloning the Repository
 
-Primeiramente, clone o repositório do projeto para sua máquina local.
+First, clone the project repository to your local machine.
 
 ```bash
 $ git clone https://github.com/gsoaresdz/anti-captcha.git
 ```
 
-### Instalação das Dependências
+### Installing Dependencies
 
-Para instalar as dependências do projeto, execute o seguinte comando no terminal:
+To install the project dependencies, run the following command in the terminal:
 
 ```bash
 $ pip install selenium webdriver-manager anticaptchaofficial pillow
 ```
 
-### Configuração da API Key
+### Configuring the API Key
 
-Você deve adquirir uma chave API do Anti-Captcha. Após obter, substitua **`'SUA_CHAVE_API'`** pela sua chave real no script.
+You need to acquire an Anti-Captcha API key. Once obtained, replace **`'YOUR_API_KEY'`** with your actual key in the script.
 
-### Instalação do WebDriver
+### WebDriver Installation
 
-O WebDriver Manager cuidará automaticamente do download do driver necessário para o seu navegador. Certifique-se de ter o navegador correspondente instalado (por padrão, Chrome).
+WebDriver Manager will automatically handle the download of the necessary driver for your browser. Make sure you have the corresponding browser installed (Chrome by default).
 
-### Execução do Código
+### Running the Code
 
-Para executar o projeto, abra o script no seu ambiente de desenvolvimento Python e execute-o. O script automatizará a abertura do navegador, acessará a página de teste do reCAPTCHA, resolverá o captcha e enviará a evidência da quebra do captcha.
+To run the project, open the script in your Python development environment and execute it. The script will automate the browser opening, access the reCAPTCHA test page, solve the captcha, and capture evidence of the captcha being solved.
 
-### **Passos Executados pelo Código**
+### **Steps Performed by the Code**
 
-1. **Abertura do Navegador**: Inicia uma sessão do navegador Chrome.
-2. **Acessando a Página Web**: Navega até a página com o reCAPTCHA v2.
-3. **Quebrando o Captcha**: Utiliza a API do Anti-Captcha para resolver o captcha.
-4. **Envio de Evidência**: Tira um screenshot como evidência após quebrar o captcha.
-5. **Encerramento**: Fecha a sessão do navegador.
+1. **Opening the Browser**: Starts a Chrome browser session.
+2. **Accessing the Web Page**: Navigates to the page with reCAPTCHA v2.
+3. **Breaking the Captcha**: Uses the Anti-Captcha API to solve the captcha.
+4. **Sending Evidence**: Takes a screenshot as evidence after solving the captcha.
+5. **Closing**: Closes the browser session.
 
-## **:memo: Observações Importantes**
+## **:memo: Important Notes**
 
-- Este projeto é apenas para fins educacionais e de pesquisa.
-- Quebrar captchas em sites sem permissão pode violar termos de serviço e leis locais.
-- É importante usar este script de forma ética e responsável.
+- This project is for educational and research purposes only.
+- Bypassing captchas on websites without permission may violate terms of service and local laws.
+- It is important to use this script ethically and responsibly.
 
-## **:memo: Licença**
+## **:memo: License**
 
-Este projeto está sob licença do MIT. Para obter mais detalhes, consulte o arquivo [LICENSE](LICENSE).
+This project is under the MIT license. For more details, see the [LICENSE](LICENSE) file.
 
-Feito com :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
+Made with :heart: by <a href="https://github.com/gsoaresdz" target="_blank">gsoaresdz</a>
 
-&#xa0;
-
-<a href="#top">De volta ao topo</a>
+<a href="#top">Back to top</a>
